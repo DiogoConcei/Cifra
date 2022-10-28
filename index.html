@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./img/star-svgrepo-com.svg" type="image/x-icon" />
+  <script src="Codificador.js" defer></script>
+  <title>Decodificador</title>
+</head>
+
+<body>
+  <main>
+    <section class="text">
+      <h1><span>Encriptador Mestre</span></h1>
+      <h2>
+        Venha aqui <span>encriptar a sua mensagem</span> !, torne as suas
+        <span>mensagens seguras imediatamente</span>
+      </h2>
+    </section>
+    <section class="select-area">
+      <p>
+        Escolha aqui sua forma de <span>Decodificação</span> ou
+        <span>Codificação</span>
+      </p>
+      <select name="Cod-opt" id="">
+        <option value="1">Cifra de Cesar</option>
+        <option value="2" selected>Base64</option>
+      </select>
+      <input type="number" name="" id="passos" />
+    </section>
+    <section class="blocos-texto">
+      <textarea placeholder="Insira aqui  sua mensagem" name="" id="area1" cols="30" rows="10"></textarea>
+      <textarea placeholder="Veja o resultado aqui" name="" id="area2" cols="30" rows="10"></textarea>
+    </section>
+    <section class="doisbtn">
+      <label for="Criptografar">Codificar
+        <input type="radio" name="opt" id="Criptografar" checked />
+      </label>
+      <label for="Decodificar">Decodificar
+        <input type="radio" name="opt" id="Decodificar" />
+      </label>
+    </section>
+    <button type="submit" onclick="Action()">Change</button>
+    <div class="caixa-inf" id="informacoes">
+      <button type="submit" onclick="info()">Clique aqui para mais informações</button>
+      <div class="ocult-text">
+        <p id="Troca-troca">Texto oculto</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
